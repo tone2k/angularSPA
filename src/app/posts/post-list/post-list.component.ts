@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -16,5 +16,5 @@ export class PostListComponent {
   //   { title: 'Third Post', content: 'This is the third post' }
   // ];
 
-  posts = [];
+  @Input() posts = [];
 }
